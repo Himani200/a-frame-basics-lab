@@ -8,6 +8,16 @@
   <body>
     <a-scene>
       <!-- Code your scene in here! -->
+<a-box position="-1 0.5 -3" rotation="0 45 0" rotation="45 45 45" color="#ff0000">
+	<a-animation attribute="rotation" repeat="indefinite" to="0 360 0"></a-animation></a-box>
+
+      <a-sphere position="0 1.25 -4" rotation="45 45 45" scale="2 2 2" radius="0.25" color="#bfff00">
+	<a-animation attribute="position" direction="alternate" to="0 6.5 -5" dur="1000" repeat="indefinite"></a-animation></a-sphere>
+
+      <a-cylinder position="1 0.75 -3" radius="0.5" rotation="45 45 45" height="1.5" color="#ffb3b3">
+	<a-animation attribute="rotation" repeat="indefinite" to="0 360 0"></a-animation></a-cylinder>
+      <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#8c7373"></a-plane>
+      <a-sky color="#ECECEC"></a-sky>
     </a-scene>
   </body>
 </html>
